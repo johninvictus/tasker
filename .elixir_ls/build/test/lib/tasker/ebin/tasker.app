@@ -1,6 +1,9 @@
 {application,tasker,
              [{applications,[kernel,stdlib,elixir,logger,httpoison,json]},
               {description,"tasker"},
-              {modules,['Elixir.Tasker','Elixir.Tasker.Worker']},
+              {modules,['Elixir.Tasker','Elixir.Tasker.Application',
+                        'Elixir.Tasker.Coordinator',
+                        'Elixir.Tasker.Supervisor','Elixir.Tasker.Worker']},
               {registered,[]},
-              {vsn,"0.1.0"}]}.
+              {vsn,"0.1.0"},
+              {mod,{'Elixir.Tasker.Application',[]}}]}.
